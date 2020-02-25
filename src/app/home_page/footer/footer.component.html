@@ -1,0 +1,102 @@
+<footer>
+  <section id="footer_top">
+    <!-- thinkahoy-rightSide-logo -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer_top_logo">
+            <a routerLink="">
+              <img src="assets/img/thinkahoy-footer-logo.svg" class="mx-auto d-block" alt="thinahoy">
+            </a>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer_menus">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="footer_menuTitle">Useful Link</p>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/home" routerLinkActive="active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/aboutus" routerLinkActive="active">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/contactus" routerLinkActive="active">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/ourservice" routerLinkActive="active">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/blog" routerLinkActive="active">Blog</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-2">
+          <div class="footer_menus">
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <p class="footer_menuTitle">Need Help?</p>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/faq" routerLinkActive="active">FAQs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/privacy-policy" routerLinkActive="active">Privacy Policy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" routerLink="/terms-conditions" routerLinkActive="active">Terms Conditions</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="subscre">
+            <h2>Subscribe</h2>
+            <p>Subscribe to our newsletter, so that you can be the first to know about new offers and promotions.</p>
+            <form>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Enter Email Address">
+                <div class="input-group-append">
+                  <span class="input-group-text" (click)="subscribeOpen(subscribe)">SUBSCRIBE</span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-top-cons">
+    </div>
+  </section>
+  <section id="footer_bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="copyright">
+            <p>© 2020. All Rights Reserved.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <a href="#"><img src="assets/img/Secure.svg" class="rounded float-right" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+<!-- USER REDLE START -->
+<ng-template #subscribe let-modal>
+  <div class="homepageModels">
+    <div class="modal-body">
+      <div class="modelinside">
+        <span class="close" (click)="modal.close('Save click')">x</span>
+        <h2>subscribe</h2>
+        <h3>hello!</h3>
+        <p>Some wording would be good</p>
+      </div>
+    </div>
+  </div>
+</ng-template>
+<!-- USER REGISTER MODLE END -->

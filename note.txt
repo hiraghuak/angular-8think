@@ -1,0 +1,23 @@
+<!-- Video Section Start -->
+<section id="Banner">
+  <!-- <div class="VideoBanner">
+      <iframe src="https://www.youtube.com/embed/x9B0VZhpCjo?&controls=0&autoplay=1&loop=0&showinfo=0&mute=1"
+        frameborder="0" allow="accelerometer; autoplay; encrypted-media;" frameborder="0"></iframe>
+        <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1&playlist=W0LHTWG-UmQ" frameborder="0" allowfullscreen></iframe>
+    </div> -->
+  <div class="videoContainer">
+    <video id="video" autoplay loop oncanplay="this.muted=true">
+      <source src="assets/video/ThinkBusinessThinkusThinkahoy.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+  <!-- (click)="goDown()" -->
+  <button class="goDown" [ngx-scroll-to]="'#whatIsThinkAhoy'">
+    <img src="assets/img/mouse-down.png" alt="thinkahoy go down">
+    <!-- <a href="whatIsThinkAhoy"></a> -->
+  </button>
+  <button id="bannerUnmute" (click)="BannerVidPlayPause()">
+    <img src="assets/img/mute.svg" alt="">
+  </button>
+</section>
+<!-- Video Section End -->

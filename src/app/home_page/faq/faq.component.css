@@ -1,0 +1,167 @@
+.panel-heading {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+.panel-title>a,
+.panel-title>a:active {
+  display: block;
+  padding: 15px;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+  text-decoration: none;
+}
+
+.panel-heading a:before {
+  font-family: "Glyphicons Halflings";
+  content: "\e080";
+  float: right;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.panel-heading.active a:before {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.snj-panel .panel {
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.snj-panel .panel-heading {
+  background: none;
+  border: none;
+  border-radius: 0;
+}
+
+.snj-panel .panel+.panel {
+  margin: 0;
+  border-radius: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.snj-panel .panel-title a {
+  display: block;
+  text-decoration: none;
+}
+
+.snj-panel .panel-body {
+  line-height: rem(22px);
+}
+
+
+#faq_main {
+  margin-top: 8%;
+  margin-bottom: 5%;
+}
+
+.faq_title {
+  text-align: center;
+}
+
+.faq_title h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.faq_title h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.faq_search {
+  width: 30%;
+  display: block;
+  margin: 0 auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.faq_search .form-control {
+  border-radius: 0px;
+  padding: 10px 10px;
+  font-size: 14px;
+  border-right: 0px;
+}
+
+.faq_search .input-group-text {
+  background-color: transparent;
+  border-left: 0px;
+  cursor: pointer;
+}
+
+.faq_search .input-group-text:hover {
+  background-color: #d76b4f;
+  border-color: #d76b4f;
+  color: #fff;
+}
+
+.faq_nav {
+  padding: 15px 0px;
+  margin-bottom: 25px;
+}
+
+.faq_nav .nav-link {
+  border-bottom: 5px solid #fff;
+  cursor: pointer;
+}
+
+.faq_nav .nav-link:hover {
+  background-color: #f1f1f1;
+  border-bottom: 5px solid #d76b4f52;
+}
+
+.faq_nav .nav-link.active {
+  border-bottom: 5px solid #d76b4f;
+}
+
+
+.faq_accordion .card-header {
+  padding: 5px 0;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.faq_accordion .card {
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  margin-bottom: 3px;
+}
+
+.faq_accordion .card .btn {
+  font-weight: bold;
+  font-size: 14px;
+  color: #d76b4f;
+}
+
+.faq_accordion .card-body {
+  font-size: 14px;
+}
+
+
+.faq_new_nav .nav-pills .nav-link {
+  color: #000;
+  border-radius: 0px;
+  border-bottom: 5px solid #fff;
+}
+
+.faq_new_nav .nav-pills .nav-link:hover{
+  background-color: #f1f1f1;
+  border-bottom: 5px solid #d76b4f52;
+}
+
+
+.faq_new_nav .nav-pills .nav-link.active {
+  border-bottom: 5px solid #d76b4f;
+  background-color: transparent;
+}

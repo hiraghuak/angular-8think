@@ -1,1 +1,221 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  font-family: 'Raleway', sans-serif !important;
+}
+
+.websiteheader .nav-link {
+  font-size: 14px;
+}
+
+
+.modal-content {
+  background-color: #fff0 !important;
+  border: 0px !important;
+}
+
+.bg-dark {
+  background-color: #423939 !important;
+}
+
+.logo img {
+  width: 160px !important;
+}
+
+.hamburgerMenu img {
+  width: 25px !important;
+}
+
+.navbar {
+  padding: 1rem 1rem !important;
+  box-shadow: 0px 3px 4px 0px #0006;
+}
+
+.actionBtn {
+  border-radius: 26px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5858), to(#f09819));
+  background: linear-gradient(#ff5858 0%, #f09819 100%);
+  padding: 0px 30px;
+  margin-right: 10px;
+}
+
+.actionBtn .nav-link {
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.actionBtn .nav-link {
+  color: #fff !important;
+}
+
+.actionBtn:hover {
+  opacity: 1;
+}
+
+.homepageModels .modal-body {
+  background-color: #ffffff69 !important;
+  padding: 20px;
+  border-radius: 50px;
+}
+
+.homepageModels .modelinside {
+  padding: 35px;
+  background-color: #423939 !important;
+  border-radius: 40px;
+}
+
+.modelinside {
+  position: relative;
+}
+
+.modelinside .close {
+  position: absolute;
+  background-color: #d76b4f;
+  color: #fff;
+  border-radius: 100%;
+  padding: 6px 13px 10px 12px;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  box-shadow: 0px 4px 3px 1px #00000066;
+  cursor: pointer;
+}
+
+.modelinside .close:hover {
+  background-color: #e68870;
+}
+
+
+.modelinside h2 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+.modelinside h3 {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.modelinside p {
+  color: #fff;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.model_btn_group p {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 5px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+
+.modelinside p a {
+  color: #d76b4f !important;
+  margin-left: 5px;
+  font-weight: bold;
+}
+
+.model_btn_group .btn {
+  width: 100%;
+  margin-bottom: 15px;
+  color: #fff;
+  background-color: #635b5b;
+  border-color: #948e8e;
+  padding: 15px 0px;
+}
+
+.model_btn_group .btn:hover {
+  background-color: #d76b4f;
+  border-color: #fd9d84;
+}
+
+.register_btn_group {
+  text-align: center;
+}
+
+.register_btn {
+  border: 0px;
+  border-radius: 26px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5858), to(#f09819));
+  background: linear-gradient(#ff5858 0%, #f09819 100%);
+  padding: 0px 30px;
+  margin-right: 10px;
+  opacity: 1;
+  width: 50% !important;
+}
+
+.register_btn:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8080), to(#ffbe60));
+  background: linear-gradient(#ff8080 0%, #ffbe60 100%);
+}
+
+.model_btn_group label {
+  color: #bdbdbd;
+  font-size: 11px;
+}
+
+.model_btn_group .form-control {
+  color: #fcfcfc;
+  border: 1px solid #ffffff80;
+  background-color: #423939;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-top: 0px;
+  border-right: 0px;
+  border-left: 0px;
+  border-radius: 0px;
+  font-size: 12px;
+  padding: 5px 1px;
+}
+
+.forgotpass p {
+  font-size: 11px !important;
+  color: #bdbdbd !important;
+  text-align: right !important;
+  margin: 5px 0 !important;
+}
+
+
+
+#ourservice_inside_page {
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.ourservice_details {
+  position: relative;
+  padding: 20px 0 90px 0;
+}
+
+.ourservice_details::after {
+  /* background-image: url('../../../assets/img/ourservice/ourservice_bg.png'); */
+  background-image: url('../src/assets/img/ourservice/ourservice_bg.png');
+  position: absolute;
+  content: "";
+  width: 99%;
+  height: 100%;
+  left: -80px;
+  background-color: #7fffd400;
+  bottom: 10px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.ourservice_details h2 {
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.ourservice_container_text p {
+  margin-top: 20%;
+}
+
+.detailed_modle {
+  margin-left: 5%;
+}

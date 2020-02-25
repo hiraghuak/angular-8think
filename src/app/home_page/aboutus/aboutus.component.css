@@ -1,0 +1,76 @@
+#aboutus {
+  padding: 10% 0 60px 0px;
+}
+
+#OurCulture {
+  border-top: 5px solid #38323d;
+  border-bottom: 5px solid #38323d;
+}
+
+.OurCulturebody h2 {
+  text-align: center;
+}
+
+.OurCulturebody p {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.OurCulturebody {
+  margin-top: 37%;
+}
+
+.about_before h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.about_before p {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.aboutus_second p {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.aboutus_group_img img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  height: 100px;
+}
+
+#aboutus {
+  position: relative;
+}
+
+.aboutus_first {
+  position: absolute;
+  left: -29%;
+  background-color: #ffffffbd;
+  width: 110%;
+  padding: 20px;
+  top: 15%;
+  border-radius: 10px;
+}
+
+
+#OurCulture {
+  position: relative;
+}
+
+#OurCulture::after {
+  background-image: url('../../../assets/img/color-bg.png');
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 100%;
+  right: 0px;
+  background-color: #7fffd400;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: 20;
+}

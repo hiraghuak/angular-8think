@@ -1,0 +1,65 @@
+#ourservice {
+  padding: 20px;
+  margin-top: 10%;
+  margin-bottom: 100px;
+}
+
+.ourservice_leftside {
+  position: relative;
+  padding: 90px 10px 80px 10px;
+}
+
+.ourservice_leftside h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.ourservice_leftside p {
+  text-align: center;
+  font-size: 14px;
+}
+
+.ourservice_leftside::after {
+  background-image: url('../../../assets/img/ourservice/ourservice_bg.png');
+  position: absolute;
+  content: "";
+  width: 150%;
+  height: 100%;
+  right: -29%;
+  background-color: #7fffd400;
+  bottom: 0px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  z-index: -1;
+}
+
+.ourservice_img_card {
+  padding: 10px;
+}
+
+.ourservice_img_card img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: 170px;
+  border-radius: 4px !important;
+}
+.ourservice_img_card a {
+    cursor: pointer;
+}
+
+.ourservice_img_card a:hover img {
+    border-radius: 4px;
+}
+
+.ourServiceFirstLine {
+  margin-left: 10px;
+}
+
+.ourservice_container {
+  margin-left: 15%;
+}
+
+.ourservice_img_card-last {
+    margin-top: 40%;
+}
