@@ -1,0 +1,93 @@
+#contactus {
+  margin-top: 5.7%;
+  margin-bottom: 20%;
+  position: relative;
+}
+
+.contact_address {
+  background-color: #2e1f22;
+  padding: 80px 20px;
+  color: #fff !important;
+}
+
+.contact_address h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+
+.contact_address p {
+  margin: 0px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.contact_address a {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 10px !important;
+  display: block;
+}
+
+.contact_address i {
+  margin-right: 10px;
+  color: #d87355;
+}
+
+.contact_address address p:nth-child(1),
+.contact_address address p:nth-child(2),
+.contact_address address p:nth-child(3) {
+  margin-bottom: 0px;
+}
+
+.contact_address address p:nth-child(2),
+.contact_address address p:nth-child(3) {
+  margin-left: 30px;
+}
+
+.contact_form {
+  padding: 30px 20px 0px 10px;
+}
+
+
+.contact_form .form-control {
+  padding: 0.775rem 0.75rem;
+  font-size: 0.8rem;
+  border: 1px solid #d87355a1;
+  border-radius: 0px;
+}
+
+.contact_form .btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff5858), to(#f09819));
+  background: linear-gradient(#ff5858 0%, #f09819 100%);
+  border: 0px;
+  border-radius: 20px;
+  padding: 10px 60px;
+  margin-bottom: 15px;
+}
+
+
+.contactus_body {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  background-color: white;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  left: 50%;
+}
+
+.contactus_body .container-fluid {
+  padding-right: 0;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+
+agm-map {
+  height: 300px;
+}

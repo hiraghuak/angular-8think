@@ -219,3 +219,16 @@ body {
 .detailed_modle {
   margin-left: 5%;
 }
+
+
+.vid_banner .iframe {
+  display: block;
+  margin: 0 auto;
+}
+
+.vido_container .modal-dialog {
+  margin: 0;
+  width: 100% !important;
+  margin: 0 auto !important;
+  max-width: 48% !important;
+}

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+declare var $: any;
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
 })
 export class HeaderComponent implements OnInit {
   closeResult: string;
-
+  
   constructor(private modalService: NgbModal) { }
 
   open(content) {
@@ -84,7 +85,6 @@ export class HeaderComponent implements OnInit {
     document.getElementById('myNav').style.opacity = '0';
     document.getElementById('myNav').style.width = '0%';
   }
-
 
   ngOnInit(): void {
   }

@@ -3,22 +3,43 @@
 
 <div class="carousel_body">
   <div style="text-align:center">
-    <owl-carousel-o [options]="customOptions">
+    <owl-carousel-o [options]="customOptions" class="homebanner">
 
-      <ng-template carouselSlide><img src="assets/img/banner/banner1.png">
+      <ng-template carouselSlide class="banner_iteam">
+        <img src="assets/img/banner/banner1.png" (click)="video_banner(videobanner_model)">
       </ng-template>
-      <ng-template carouselSlide><img src="assets/img/banner/banner2.png">
+      <ng-template carouselSlide class="banner_iteam">
+        <img src="assets/img/banner/banner2.png">
       </ng-template>
-      <ng-template carouselSlide><img src="assets/img/banner/banner3.png">
+      <ng-template carouselSlide class="banner_iteam">
+        <img src="assets/img/banner/banner3.png">
       </ng-template>
-      <ng-template carouselSlide><img src="assets/img/banner/banner1.png">
+      <ng-template carouselSlide class="banner_iteam">
+        <img src="assets/img/banner/banner1.png">
       </ng-template>
-      <ng-template carouselSlide><img src="assets/img/banner/banner2.png">
+      <ng-template carouselSlide class="banner_iteam">
+        <img src="assets/img/banner/banner2.png">
       </ng-template>
 
     </owl-carousel-o>
   </div>
 </div>
+
+
+<!-- BANNER VIDEO START -->
+<div class="vido_container">
+  <ng-template #videobanner_model let-modal>
+    <div class="vid_banner">
+      <div class="modal-body">
+        <iframe width="560" height="315"
+          src="https://www.youtube.com/embed/x9B0VZhpCjo?controls=1&showinfo=0&rel=0&autoplay=1&loop=0&playlist=W0LHTWG-UmQ"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen
+          style="pointer-events:none;" onClick="style.pointerEvents='none'"></iframe>
+      </div>
+    </div>
+  </ng-template>
+</div>
+<!-- BANNER VIDEO END -->
 
 
 

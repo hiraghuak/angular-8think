@@ -13,6 +13,7 @@ import { TermsConditionsComponent } from './home_page/terms-conditions/terms-con
 import { PrivacyPolicyComponent } from './home_page/privacy-policy/privacy-policy.component';
 import { BlogComponent } from './home_page/blog/blog.component';
 import { FaqComponent } from './home_page/faq/faq.component';
+import { ContactusComponent } from './home_page/contactus/contactus.component';
 
 
 const routes: Routes = [
@@ -30,7 +31,7 @@ const routes: Routes = [
   { path: 'privacy-policy', component: PrivacyPolicyComponent },
   { path: 'blog', component: BlogComponent },
   { path: 'faq', component: FaqComponent },
-  // { path: 'contactus', component: HomebodyComponent },
+  { path: 'contactus', component: ContactusComponent },
 
   { path: '**', component: PageNotFoundComponent }
 ];

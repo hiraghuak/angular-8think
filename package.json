@@ -11,6 +11,7 @@
   },
   "private": true,
   "dependencies": {
+    "@agm/core": "^1.1.0",
     "@angular/animations": "~9.0.1",
     "@angular/common": "~9.0.1",
     "@angular/compiler": "~9.0.1",
@@ -22,6 +23,7 @@
     "@angular/router": "~9.0.1",
     "@ng-bootstrap/ng-bootstrap": "^5.3.0",
     "@nicky-lenaers/ngx-scroll-to": "^3.0.1",
+    "@types/googlemaps": "^3.39.3",
     "bootstrap": "^4.4.1",
     "imports-loader": "^0.8.0",
     "jquery": "^3.4.1",

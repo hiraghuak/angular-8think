@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import { AgmCoreModule } from '@agm/core';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -28,6 +28,7 @@ import { TermsConditionsComponent } from './home_page/terms-conditions/terms-con
 import { PrivacyPolicyComponent } from './home_page/privacy-policy/privacy-policy.component';
 import { BlogComponent } from './home_page/blog/blog.component';
 import { FaqComponent } from './home_page/faq/faq.component';
+import { ContactusComponent } from './home_page/contactus/contactus.component';
 
 
 @NgModule({
@@ -50,6 +51,7 @@ import { FaqComponent } from './home_page/faq/faq.component';
     PrivacyPolicyComponent,
     BlogComponent,
     FaqComponent,
+    ContactusComponent,
   ],
   imports: [
     BrowserModule,
@@ -57,7 +59,10 @@ import { FaqComponent } from './home_page/faq/faq.component';
     NgbModule,
     CarouselModule,
     BrowserAnimationsModule,
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDCmDnWPXKL0ZeIyYhtqPz31-UgaWOn1mM'
+    })
   ],
   providers: [
     Title

@@ -3,6 +3,8 @@ import { ElementRef, Inject, Injectable, ViewChild } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 
+import { NgbModal, ModalDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+
 declare var $: any;
 
 
@@ -39,23 +41,20 @@ export class HomebodyComponent implements OnInit {
     nav: true
   };
 
+  // 
 
 
 
 
-
-
-
-
-
-
-
-
-  constructor(private titleService: Title) { }
+  constructor(private titleService: Title, private modalService: NgbModal) { }
   @ViewChild('video') video: ElementRef;
 
   public ScrollMagic: any;
   public controller: any;
+  closeResult: string;
+
+
+
 
   ngOnInit(): void {
     this.titleService.setTitle('thinkAhoy');
@@ -74,6 +73,25 @@ export class HomebodyComponent implements OnInit {
 
   }
 
+  // videobanner_model
+
+  video_banner(videobanner_model) {
+    this.modalService.open(videobanner_model, { ariaLabelledBy: 'modal-basic-title' }).result.then((result) => {
+      this.closeResult = `Closed with: ${result}`;
+    }, (reason) => {
+      this.closeResult = `Dismissed ${this.getDismissReason(reason)}`;
+    });
+  }
+
+  private getDismissReason(reason: any): string {
+    if (reason === ModalDismissReasons.ESC) {
+      return 'by pressing ESC';
+    } else if (reason === ModalDismissReasons.BACKDROP_CLICK) {
+      return 'by clicking on a backdrop';
+    } else {
+      return `with: ${reason}`;
+    }
+  }
   BannerVidPlayPause = () => {
     const myVideo = $('#video');
     if (myVideo.get(0).muted) {
@@ -82,5 +100,7 @@ export class HomebodyComponent implements OnInit {
       myVideo.get(0).muted = true;
     }
   }
+
+
 
 }
